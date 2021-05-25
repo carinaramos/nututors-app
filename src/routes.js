@@ -2,8 +2,7 @@
 
 const resetDB = require("../config/scripts/populateDB")
 
-const Companion = require("./schema/Companion");
-const Doctor = require("./schema/Doctor");
+const Tutor = require("./schema/Tutor");
 
 const express = require("express");
 const router = express.Router();
@@ -31,12 +30,12 @@ router.route("/")
 // ---------------------------------------------------
 // Edit below this line
 // ---------------------------------------------------
-router.route("/doctors")
+router.route("/tutors")
     .get((req, res) => {
-        console.log("GET /doctors");
+        console.log("GET /tutors");
 
         // already implemented:
-        Doctor.find({})
+        Tutor.find({})
             .then(data => {
                 res.status(200).send(data);
             })
@@ -45,120 +44,53 @@ router.route("/doctors")
             });
     })
     .post((req, res) => {
-        console.log("POST /doctors");
+        console.log("POST /tutors");
         res.status(501).send();
     });
 
-// optional:
-router.route("/doctors/favorites")
-    .get((req, res) => {
-        console.log(`GET /doctors/favorites`);
-        res.status(501).send();
-    })
-    .post((req, res) => {
-        console.log(`POST /doctors/favorites`);
-        res.status(501).send();
-    });
     
-router.route("/doctors/:id")
+router.route("/tutors/:id")
     .get((req, res) => {
-        console.log(`GET /doctors/${req.params.id}`);
-        res.status(501).send();
-    })
-    .patch((req, res) => {
-        console.log(`PATCH /doctors/${req.params.id}`);
-        res.status(501).send();
-    })
-    .delete((req, res) => {
-        console.log(`DELETE /doctors/${req.params.id}`);
-        res.status(501).send();
-    });
-    
-router.route("/doctors/:id/companions")
-    .get((req, res) => {
-        console.log(`GET /doctors/${req.params.id}/companions`);
-        res.status(501).send();
-    });
-    
-
-router.route("/doctors/:id/goodparent")
-    .get((req, res) => {
-        console.log(`GET /doctors/${req.params.id}/goodparent`);
-        res.status(501).send();
-    });
-
-// optional:
-router.route("/doctors/favorites/:doctor_id")
-    .delete((req, res) => {
-        console.log(`DELETE /doctors/favorites/${req.params.doctor_id}`);
-        res.status(501).send();
-    });
-
-router.route("/companions")
-    .get((req, res) => {
-        console.log("GET /companions");
-        // already implemented:
-        Companion.find({})
-            .then(data => {
-                res.status(200).send(data);
+        console.log(`GET /tutors/${req.params.id}`);
+        Tutor.findById(req.params.id)
+            .then(doctor => {
+                if (doctor) {
+                    res.status(200).send(doctor);
+                } else {
+                    res.status(404).send({message: `Tutor with id \"${req.params.id}\" does not exist in your database.`});
+                }
             })
             .catch(err => {
-                res.status(500).send(err);
+                res.status(404).send({message: `Tutor with id \"${req.params.id}\" does not exist in your database.`});
             });
     })
-    .post((req, res) => {
-        console.log("POST /companions");
-        res.status(501).send();
-    });
-
-router.route("/companions/crossover")
-    .get((req, res) => {
-        console.log(`GET /companions/crossover`);
-        res.status(501).send();
-    });
-
-// optional:
-router.route("/companions/favorites")
-    .get((req, res) => {
-        console.log(`GET /companions/favorites`);
-        res.status(501).send();
-    })
-    .post((req, res) => {
-        console.log(`POST /companions/favorites`);
-        res.status(501).send();
-    })
-
-router.route("/companions/:id")
-    .get((req, res) => {
-        console.log(`GET /companions/${req.params.id}`);
-        res.status(501).send();
-    })
     .patch((req, res) => {
-        console.log(`PATCH /companions/${req.params.id}`);
-        res.status(501).send();
-    })
+        console.log(`PATCH /tutors/${req.params.id}`);
+        Tutor.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
+            .then(doctor => {
+                if (doctor) {
+                    res.status(200).send(doctor);
+                } else {
+                    res.status(404).send({message: `Tutor with id \"${req.params.id}\" does not exist in your database.`});
+                }
+            })
+            .catch(err => {
+                res.status(404).send({message: `Tutor with id \"${req.params.id}\" does not exist in your database.`});
+            });    })
     .delete((req, res) => {
-        console.log(`DELETE /companions/${req.params.id}`);
-        res.status(501).send();
-    });
-
-router.route("/companions/:id/doctors")
-    .get((req, res) => {
-        console.log(`GET /companions/${req.params.id}/doctors`);
-        res.status(501).send();
-    });
-
-router.route("/companions/:id/friends")
-    .get((req, res) => {
-        console.log(`GET /companions/${req.params.id}/friends`);
-        res.status(501).send();
-    });
-
-// optional:
-router.route("/companions/favorites/:companion_id")
-    .delete((req, res) => {
-        console.log(`DELETE /companions/favorites/${req.params.companion_id}`);
-        res.status(501).send();
-    });
+        console.log(`DELETE /tutors/${req.params.id}`);
+        Tutor.findOneAndDelete({ _id: req.params.id })
+            .then(result => {
+                if (result) {
+                    // console.log(result);
+                    res.status(200).send(null);
+                } else {
+                    res.status(404).send({message: `Tutor with id \"${req.params.id}\" does not exist in your database.`});
+                }
+            })
+            .catch(err => {
+                res.status(404).send({message: `Tutor with id \"${req.params.id}\" does not exist in your database.`});
+            });    });
+    
 
 module.exports = router;
