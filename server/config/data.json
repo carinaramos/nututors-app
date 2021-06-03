@@ -2,7 +2,7 @@
     "tutors": [
         {
             "lastUpdated": "4/1/2021 8:21 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/4003c4e5-6d4d-4f54-9584-0ecf8e55d45f.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=WKcXOD5jA9HMoZy%2FX4O4jJnDwac%3D&Expires=1622742565",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/avi.jpeg",
             "firstName" : "Avi",
             "lastName" : "Chung",
             "email": "avichung2023@u.northwestern.edu",
@@ -28,7 +28,7 @@
         },
         {
             "lastUpdated": "3/31/2021 7:02 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/632ead87-6c44-46f5-94a9-e102336fa953.JPG?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=SwbkT8%2F52xClrelLZTUwxHWf34Q%3D&Expires=1622742733",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/emilys.jpeg",
             "firstName" : "Emily",
             "lastName" : "Shteynberg",
             "email": "emilyshteynberg2022@u.northwestern.edu",
@@ -53,7 +53,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/31/2021 6:58 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/19723f40-bd31-4995-9335-3bd6f187876e.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=2bTocrtYcbe9c7jwePOhorMRY3Y%3D&Expires=1622742844",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/shani.jpeg",
             "firstName" : "Shani",
             "lastName" : "Katz",
             "email": "shanikatz2022@u.northwestern.edu",
@@ -78,7 +78,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/31/2021 6:53 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/9d67799b-09c1-4068-a7c7-74f4c7d66233.jpg.200x200_q95_crop.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=btbZUSC9vB9ULcAv0IUJyfIbC6k%3D&Expires=1622743066",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/alex.jpg",
             "firstName" : "Alex",
             "lastName" : "Gold",
             "email": "alexandragold2022@u.northwestern.edu",
@@ -103,7 +103,7 @@
             "notes": "I currently don't want to tutor in person but I may feel comfortable once I am vaccinated."
         },{
             "lastUpdated": "3/31/2021 6:50 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/8ffea61a-533c-4ee8-a391-4b1ba751d2da.jpeg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=Zv53IBOzXOlZcmVgJ8lc2eCMQ3Q%3D&Expires=1622742964",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/emmeline.jpeg",
             "firstName" : "Emmeline",
             "lastName" : "Leggett",
             "email": "emmelineleggett2022@u.northwestern.edu",
@@ -128,7 +128,7 @@
             "notes": false
         },{
             "lastUpdated": "3/31/2021 3:05 AM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/6c30b3ff-cf11-4ef8-8448-b4712826997a.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=Q4sSwx6OUqR8tKBEUuoNZDbQ0Xo%3D&Expires=1622743127",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/sophiebiehl.jpeg",
             "firstName" : "Sophie",
             "lastName" : "Biehl",
             "email": "sophiebiehl2022@u.northwestern.edu",
@@ -153,7 +153,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/30/2021 5:47 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/32b85b3c-8eb4-4c51-aa99-08affbad5983.jpeg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=RrE3salRWz5nOTh2BuT1C1U8LR0%3D&Expires=1622743207",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/shayak.jpg",
             "firstName" : "Shayak",
             "lastName" : "Bandyopadhyay",
             "email": "shayakbandyopadhyay2021@u.northwestern.edu",
@@ -178,7 +178,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/30/2021 3:29 AM",
-            "imageURL" : "https://tutorcruncher-public.s3.amazonaws.com/nututors/logos/page_logo_201031160108.png",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/Logo+white+background.png",
             "firstName" : "Rachel",
             "lastName" : "Assaf",
             "email": "rachelassaf2023@u.northwestern.edu",
@@ -203,7 +203,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/30/2021 12:21 AM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/7bba1758-6a33-4a55-a362-b5f24d41d569.jpeg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=jV4bh3VzXqoSYoCR9qw%2FPK7pGSk%3D&Expires=1622743453",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/clare.jpeg",
             "firstName" : "Clare",
             "lastName" : "Zhang",
             "email": "clarezhang2024@u.northwestern.edu",
@@ -228,7 +228,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/29/2021 10:33 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/16ce8a44-fd0f-4699-a2e1-4a91b5cce0e3.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=XTiZH6Ltb%2F2hRJ7ugRU%2BUi0ad7Y%3D&Expires=1622743478",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/connor.jpeg",
             "firstName" : "Connor",
             "lastName" : "Call",
             "email": "connorcall2021@u.northwestern.edu",
@@ -253,7 +253,7 @@
             "notes": "I am mostly available on Mondays, Tuesdays, and Wednesday afternoons, as well as Saturdays and Sundays via Zoom."
         },{
             "lastUpdated": "3/29/2021 8:29 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/af52e079-cc98-48a7-bd17-ed3642bd245c.jpeg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=QTUo4xiSYq6KRHPSLOyhMO%2FilFw%3D&Expires=1622743500",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/jenna.jpeg",
             "firstName" : "Jenna",
             "lastName" : "Jubeir",
             "email": "jennajubeir2021@u.northwestern.edu",
@@ -278,7 +278,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/29/2021 7:36 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/99d58697-b6cc-4c1b-8985-f60d46f29380.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=UvnDyI5O07yBVU%2BVbOuxodDp7Ew%3D&Expires=1622743545",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/candace.jpeg",
             "firstName" : "Candace",
             "lastName" : "Todd",
             "email": "candacetodd2022@u.northwestern.edu",
@@ -303,7 +303,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/29/2021 6:28 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/086d9997-bd31-44f3-858b-12416f3afa84.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=xQ6hKofsSH3vfAklrsaRIKZmpZg%3D&Expires=1622743565",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/danny.jpeg",
             "firstName" : "Danny",
             "lastName" : "Oh",
             "email": "danieloh2022@u.northwestern.edu",
@@ -328,7 +328,7 @@
             "notes": "Not available Spring quarter."
         },{
             "lastUpdated": "3/29/2021 4:29 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/972dae65-39b6-4aeb-911f-93d78abf9669.jpeg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=P6BTN6ipl0PyxT%2FiO3cKN6kqFGQ%3D&Expires=1622743597",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/ryan.jpeg",
             "firstName" : "Ryan",
             "lastName" : "Shanker",
             "email": "RyanShanker2024@u.northwestern.edu",
@@ -353,7 +353,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/29/2021 3:01 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/e6210d36-8607-486d-a2c8-2672816eaaee.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=kACk06X8nqcs6vaVQ0H3dmJhnec%3D&Expires=1622742669",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/safal.jpeg",
             "firstName" : "Safal",
             "lastName" : "Dumre",
             "email": "safaldumre2022@u.northwestern.edu",
@@ -378,7 +378,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/29/2021 5:09 AM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/63a91821-4638-4a07-b41f-b35eb7924c4f.jpeg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=vdslKtDIDwbKmo%2F4cjZivHs6wp0%3D&Expires=1622743638",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/emilykim.jpeg",
             "firstName" : "Emily",
             "lastName" : "Kim",
             "email": "emilykim2022@u.northwestern.edu",
@@ -403,7 +403,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/29/2021 12:28 AM",
-            "imageURL" : "https://tutorcruncher-public.s3.amazonaws.com/nututors/logos/page_logo_201031160108.png",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/Logo+white+background.png",
             "firstName" : "Sophie",
             "lastName" : "Chang",
             "email": "sophiechang2023@u.northwestern.edu",
@@ -428,7 +428,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/28/2021 11:42 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/dcb41611-ecf7-47eb-a105-f6884f89c6e5.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=dFHVRL%2FwsqYquUePa84r8NQXbuM%3D&Expires=1622743716",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/hadi.jpeg",
             "firstName" : "Hadi",
             "lastName" : "Anwar",
             "email": "hadianwar2023@u.northwestern.edu",
@@ -453,7 +453,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/28/2021 11:37 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/56079694-ab96-4796-981e-75b7115814de.jpeg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=vTNEfse96FzcquPDHVvJIKojuQU%3D&Expires=1622743738",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/sarah.jpeg",
             "firstName" : "Sarah",
             "lastName" : "Kornfeld",
             "email": "sarahkornfeld2022@u.northwestern.edu",
@@ -478,7 +478,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/28/2021 11:32 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/d971e496-cb51-4b11-ad5a-d98a610007d2.jpeg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=7KtYWZBCT5zjPAn0qeavgJbpufM%3D&Expires=1622743760",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/serena.jpeg",
             "firstName" : "Serena",
             "lastName" : "Lyou",
             "email": "serenalyou2024@u.northwestern.edu",
@@ -503,7 +503,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/28/2021 11:09 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/1dc270c7-6a89-4bf3-9dfe-aeafbfae495c.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=WR%2BrFeY0iuVEuxkStpDINiKF2NA%3D&Expires=1622743793",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/uma.jpeg",
             "firstName" : "Uma",
             "lastName" : "Thachapuzha",
             "email": "umathachapuzha2023@u.northwestern.edu",
@@ -528,7 +528,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/28/2021 10:47 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/f2975ff4-7277-4d97-9537-152acc250634.JPG?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=7b%2FW%2BpnguBx1IuVe1dsXfJNZrNw%3D&Expires=1622743816",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/jenny.jpeg",
             "firstName" : "Jenny",
             "lastName" : "Lam",
             "email": "jennylam2021@u.northwestern.edu",
@@ -553,7 +553,7 @@
             "notes": "I would prefer to tutor on weekends."
         }, {
             "lastUpdated": "3/28/2021 10:33 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/33d20fb3-6386-4155-a01b-f7a1a77a7a87.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=pEee4pc6wC3OJkdmqQG9AbzBW9w%3D&Expires=1622743836",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/yifan.jpeg",
             "firstName" : "Yifan",
             "lastName" : "Lei",
             "email": "Yifanlei2022@u.northwestern.edu",
@@ -578,7 +578,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/28/2021 10:19 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/d84b2b7c-7ac5-470b-9360-e9b73094417f.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=FUq2GZ8ImnwvryvJUE7wEhpyVmk%3D&Expires=1622743859",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/yang.jpeg",
             "firstName" : "Yang",
             "lastName" : "Shangguan",
             "email": "YangShangguan2023.5@u.northwestern.edu",
@@ -603,7 +603,7 @@
             "notes": "Wednesdays work best for me."
         }, {
             "lastUpdated": "3/28/2021 10:16 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/3b9c8096-abbf-4a4b-b4dc-5e5a64bd30dd.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=BtwPoKdg%2BDCXHFEKulIFkDrBEfw%3D&Expires=1622743884",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/emilyw.jpeg",
             "firstName" : "Emily",
             "lastName" : "Wang",
             "email": "emilywang2024@u.northwestern.edu",
@@ -628,7 +628,7 @@
             "notes": ""
         },{
             "lastUpdated": "3/28/2021 10:16 PM",
-            "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/77bfac5b-2405-4cbb-bcf1-1f50411628de.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=tWpxn7gSw9Mn3DB6LI7Yx2xkNVY%3D&Expires=1622743913",
+            "imageURL" : "https://nututors-tutor-photos.s3.amazonaws.com/varshna.jpeg",
             "firstName" : "Varsha",
             "lastName" : "Krishnan",
             "email": "varshakrishnan2024@u.northwestern.edu",
