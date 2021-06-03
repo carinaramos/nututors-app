@@ -11,6 +11,21 @@ const TutorSchema = new Schema({
         type: Schema.Types.String,
         required: true
     },
+    // "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/4003c4e5-6d4d-4f54-9584-0ecf8e55d45f.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=WKcXOD5jA9HMoZy%2FX4O4jJnDwac%3D&Expires=1622742565",
+    imageURL: {
+        type: Schema.Types.String,
+        required: true
+    },
+    // "firstName" : "Avi",
+    firstName: {
+        type: Schema.Types.String,
+        required: true
+    },
+    // "lastName" : "Chung",
+    lastName: {
+        type: Schema.Types.String,
+        required: true
+    },
     // "email": "avichung2023@u.northwestern.edu",
     email: {
         type: Schema.Types.String,
