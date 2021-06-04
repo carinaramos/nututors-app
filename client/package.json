@@ -2,7 +2,7 @@
   "name": "nututors-react",
   "version": "0.1.0",
   "homepage": "./",
-  "proxy": "http://localhost:8081",
+  "proxy": "https://nututors-api.herokuapp.com",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.4",

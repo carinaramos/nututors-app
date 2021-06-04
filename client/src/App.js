@@ -10,7 +10,7 @@ class App extends React.Component {
             tutors: [],
         }
 
-        fetch('http://localhost:8081/tutors')
+        fetch('https://nututors-api.herokuapp.com/tutors')
             .then(response => response.json())
             .then(tutors => this.setState({ tutors: tutors }));
 
