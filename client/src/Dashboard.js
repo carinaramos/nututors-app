@@ -10,6 +10,7 @@ import { useStyles } from './useStyles';
 import Menu from './Menu';
 import Cards from './Cards';
 import Header from './Header';
+import Form2 from './Form2';
 
 
 export default function PermanentDrawerLeft() {
@@ -59,7 +60,7 @@ export default function PermanentDrawerLeft() {
             <div className={classes.toolbar} />
             {component === "cards" && <Cards tutorList={tutors} />}
             {component === "table" && <Header title="table" />}
-            {component === "form" && <Header title="form" />}
+            {component === "form" && <Form2 title="Add Tutor" />}
         </main>
       </div>
     );
