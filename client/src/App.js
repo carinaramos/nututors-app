@@ -1,5 +1,3 @@
-import Cards from './Cards';
-import Header from './Header';
 import Dashboard from './Dashboard';
 import React from 'react';
 
