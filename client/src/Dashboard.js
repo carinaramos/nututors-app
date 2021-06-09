@@ -11,9 +11,10 @@ import Menu from './Menu';
 import Cards from './Cards';
 import Header from './Header';
 import Form2 from './Form2';
+import TutorTableForm from './TutorTableForm';
 
 
-export default function PermanentDrawerLeft() {
+export default function Dashboard() {
     const classes = useStyles();
 
     const [component, setComponent] = React.useState("header");
@@ -59,7 +60,7 @@ export default function PermanentDrawerLeft() {
         <main className={classes.content}>
             <div className={classes.toolbar} />
             {component === "cards" && <Cards tutorList={tutors} />}
-            {component === "table" && <Header title="table" />}
+            {component === "table" && <TutorTableForm tutorTableList={tutors}/>}
             {component === "form" && <Form2/>}
         </main>
       </div>
