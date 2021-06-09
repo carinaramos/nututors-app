@@ -45,7 +45,15 @@ router.route("/tutors")
     })
     .post((req, res) => {
         console.log("POST /tutors");
-        res.status(501).send();
+        // if (!req.body.firstName || !req.body.lastName) {
+        //     res.status(500).send({ "message": "Name and seasons are required." });
+        //     return;
+        // }
+        Tutor.create(req.body)
+            .save()
+            .then(tutor => {
+                res.status(201).send(tutor);
+            })
     });
 
     
@@ -53,9 +61,9 @@ router.route("/tutors/:id")
     .get((req, res) => {
         console.log(`GET /tutors/${req.params.id}`);
         Tutor.findById(req.params.id)
-            .then(doctor => {
-                if (doctor) {
-                    res.status(200).send(doctor);
+            .then(tutor => {
+                if (tutor) {
+                    res.status(200).send(tutor);
                 } else {
                     res.status(404).send({message: `Tutor with id \"${req.params.id}\" does not exist in your database.`});
                 }
