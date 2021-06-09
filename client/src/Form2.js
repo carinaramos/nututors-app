@@ -46,7 +46,7 @@ export default function Form2(props) {
             fetch(`${baseURL}/tutors/`, {
                 method: "POST", 
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/x-www-form-urlencoded'
                 },
                 body: JSON.stringify(data)
             })
