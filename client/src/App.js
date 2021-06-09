@@ -1,5 +1,6 @@
-import TutorList from './TutorList';
+import Cards from './Cards';
 import Header from './Header';
+import Dashboard from './Dashboard';
 import React from 'react';
 
 class App extends React.Component {
@@ -37,10 +38,10 @@ class App extends React.Component {
     render () {        
         return (
             <div className="container">
-                <Header title="All tutors" />
+                {/* <Header title="All tutors" /> */}
 
                 <main className="main">
-                    <TutorList tutorList={this.state.tutors} onTutorSelection={this.handleTutorSelection} />
+                    <Dashboard/>
                 </main>  
             </div>
         );

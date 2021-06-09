@@ -1,12 +1,14 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
 
 class Header extends React.Component {
 
     render () {
         return (
             <header className="header">
-                <h1>{this.props.title}</h1>
-                {/* <button id="reset" className="btn">Reset Data</button> */}
+                <Typography variant="h2" gutterBottom>
+                    {this.props.title}
+                </Typography>
             </header>
         );
     }
