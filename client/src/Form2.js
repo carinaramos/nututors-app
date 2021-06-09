@@ -10,6 +10,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Button from '@material-ui/core/Button';
   
+const baseURL = '';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,6 +39,31 @@ export default function Form2(props) {
             major: document.getElementById('major').value,
         }
         console.log(data);
+        let valid = true;
+        // ADD FORM VALIDATION HERE
+
+        if (valid == true) {
+            fetch(`${baseURL}/tutors/`, {
+                method: "POST", 
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    // send to catch block:
+                    console.log("error");
+                    throw Error(response.statusText);
+                } else {
+                    console.log("done");
+                    return response.json();
+                }
+            })
+            .then(data => {
+                console.log('Success:', data);                
+            })
+        }
     };
   
     return (
