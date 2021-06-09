@@ -1,50 +1,69 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import PropTypes from 'prop-types';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import { green } from '@material-ui/core/colors';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
+import Button from '@material-ui/core/Button';
+  
 
 const useStyles = makeStyles((theme) => ({
   root: {
     '& .MuiTextField-root': {
       margin: theme.spacing(1),
-      width: '25ch',
+      width: '30ch',
     },
-  },
+    },
+    TextField: {
+        width: '50ch',
+   }
 }));
-export default function Form2() {
+export default function Form2(props) {
     const classes = useStyles();
+    
+    const verifyAdd = (ev) => {
+        const data = {
+            firstName: document.getElementById('fname').value,
+            lastName: document.getElementById('lname').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            gender: document.getElementById('gender').value,
+            hoursWorking: document.getElementById('hoursWorking').value,
+            hoursDesired: document.getElementById('hoursDesired').value,
+            imageURL: document.getElementById('url').value,
+            major: document.getElementById('major').value,
+        }
+        console.log(data);
+    };
   
     return (
       <form className={classes.root} noValidate autoComplete="off">
         <div>
             <TextField
             required
-            id="outlined-fname-input"
+            id="fname"
             label="First Name"
             variant="outlined"
-                />
+            />
             <TextField
             required
-            id="outlined-lname-input"
+            id="lname"
             label="Last Name"
             variant="outlined"
             />
             <TextField
             required
-            id="outlined-email-input"
+            id="email"
             label="Email"
             variant="outlined"
             />
             <TextField
             required
-            id="outlined-phone-input"
+            id="phone"
             label="Phone Number"
             variant="outlined"
             />
@@ -52,19 +71,19 @@ export default function Form2() {
         <div>
             <TextField
                 required
-                id="outlined-gender-input"
+                id="gender"
                 label="Gender"
                 variant="outlined"
             />
             <TextField
             required
-            id="outlined-url-input"
+            id="url"
             label="Profile Image URL"
             variant="outlined"
             />
             <TextField
             required
-            id="outlined-major-input"
+            id="major"
             label="Major"
             variant="outlined"
             />
@@ -86,8 +105,8 @@ export default function Form2() {
             </div>
         <div>
         <TextField
-          id="outlined-number"
-          label="Current Hours Working"
+          id="hoursWorking"
+          label="Hours Working"
           type="number"
           InputLabelProps={{
             shrink: true,
@@ -95,7 +114,7 @@ export default function Form2() {
           variant="outlined"
                 />
                 <TextField
-          id="outlined-number"
+          id="hoursDesired"
           label="Hours Desired"
           type="number"
           InputLabelProps={{
@@ -161,13 +180,16 @@ export default function Form2() {
             />
             </div>
             <TextField
-          id="outlined-multiline-static"
-          label="Notes"
-          multiline
-          rows={4}
-          defaultValue="Default Value"
-          variant="outlined"
-        />
+            id="outlined-multiline-static"
+            label="Notes"
+            className="notes"
+            multiline
+            rows={4}
+            variant="outlined"
+            />
+            <div>
+                <Button variant="outlined" onClick={() => verifyAdd()} color="default">Submit</Button>
+            </div>
       </form>
     );
   }

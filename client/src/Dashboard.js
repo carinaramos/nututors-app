@@ -60,7 +60,7 @@ export default function PermanentDrawerLeft() {
             <div className={classes.toolbar} />
             {component === "cards" && <Cards tutorList={tutors} />}
             {component === "table" && <Header title="table" />}
-            {component === "form" && <Form2 title="Add Tutor" />}
+            {component === "form" && <Form2/>}
         </main>
       </div>
     );
