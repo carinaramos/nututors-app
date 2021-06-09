@@ -25,14 +25,11 @@ class TutorTableForm extends React.Component {
             standardizedTesting: false,
             apClasses: false,
             other: false,
-            mathOptions: false,
-            scienceOptions: false,
-            englishOptions: false,
-            ssOptions: false,
-            flOptions: false,
-            stOptions: false,
-            apClassesOptions: false,
-            otherOptions: false
+            vaccinated: false,
+            car: false,
+            onCampus: false,
+            offCampus: false,
+            zoom: false,
         }
         this.getRowsData = this.getRowsData.bind(this);
     }
@@ -121,6 +118,54 @@ class TutorTableForm extends React.Component {
         this.fixTutors()
     }
 
+    handleOnCampus = () => {
+        if (this.state.onCampus === true) {
+            this.state.onCampus = false
+        }
+        else {
+            this.state.onCampus = true
+        }
+        this.fixTutors()
+    }
+
+    handleOffCampus = () => {
+        if (this.state.offCampus === true) {
+            this.state.offCampus = false
+        }
+        else {
+            this.state.offCampus = true
+        }
+        this.fixTutors()
+    }
+
+    handleVax= () => {
+        if (this.state.vaccinated === true) {
+            this.state.vaccinated = false
+        }
+        else {
+            this.state.vaccinated = true
+        }
+        this.fixTutors()
+    }
+    handleCar= () => {
+        if (this.state.car === true) {
+            this.state.car = false
+        }
+        else {
+            this.state.car = true
+        }
+        this.fixTutors()
+    }
+    handleZoom= () => {
+        if (this.state.zoom === true) {
+            this.state.zoom = false
+        }
+        else {
+            this.state.zoom = true
+        }
+        this.fixTutors()
+    }
+
     fixTutors = () => {
         let newtutors = []
         this.state.tutors.forEach(element => {
@@ -165,6 +210,31 @@ class TutorTableForm extends React.Component {
                     include = false
                 }
             }
+            if (this.state.vaccinated === true) {
+                if(!element.vax.includes("Fully vaccinated")){
+                    include = false
+                }
+            }
+            if (this.state.car === true) {
+                if(element.car===false){
+                    include = false
+                }
+            }
+            if (this.state.onCampus === true) {
+                if(element.onCampus===false){
+                    include = false
+                }
+            }
+            if (this.state.offCampus === true) {
+                if(element.offCampus===false){
+                    include = false
+                }
+            }
+            if (this.state.zoom === true) {
+                if(element.zoom===false){
+                    include = false
+                }
+            }
             if (include === true) {
                 newtutors.push(element)
             }
@@ -189,6 +259,7 @@ class TutorTableForm extends React.Component {
 
         return (
             <div>
+                <h2>Filter by Subject</h2>
                 <FormGroup row>
                     <FormControlLabel
                         control={<Checkbox checked={this.state.math} onChange={this.handleChangeMath} />}
@@ -224,7 +295,29 @@ class TutorTableForm extends React.Component {
                         label="Other"
                     />
                 </FormGroup>
-
+                <h2>Other Requirements</h2>
+                <FormGroup row>
+                <FormControlLabel
+                        control={<Checkbox checked={this.state.vaccinated} onChange={this.handleVax} />}
+                        label="Vaccinated"
+                    />
+                    <FormControlLabel
+                        control={<Checkbox checked={this.state.car} onChange={this.handleCar} />}
+                        label="Car"
+                    />
+                    <FormControlLabel
+                        control={<Checkbox checked={this.state.onCampus} onChange={this.handleOnCampus} />}
+                        label="On Campus Tutoring"
+                    />
+                    <FormControlLabel
+                        control={<Checkbox checked={this.state.offCampus} onChange={this.handleOffCampus} />}
+                        label="Off Campus Tutoring"
+                    />
+                    <FormControlLabel
+                        control={<Checkbox checked={this.state.zoom} onChange={this.handleZoom} />}
+                        label="Zoom/Online Tutoring"
+                    />
+                </FormGroup>
                 <TableContainer component={Paper}>
                     <Table aria-label="simple table">
                         <TableHead>

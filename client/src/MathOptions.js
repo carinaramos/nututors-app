@@ -13,13 +13,16 @@ import Checkbox from '@material-ui/core/Checkbox';
 class MathOptions extends React.Component {  
     mathOptionTutors = () =>
     {
-        
+
     }
     render () {
         const disabled = this.props.disabled 
         if (disabled === true){
             return(
-                <FormControlLabel control={<Checkbox name="Elementary Math" />} label="Elementary Math" />
+                <div>
+                <FormControlLabel control={<Checkbox />} label="Elementary Math" />
+                <FormControlLabel control={<Checkbox />} label="Pre-Alebra" />
+                </div>
             )
         }
         else{
