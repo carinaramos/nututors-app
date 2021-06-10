@@ -132,6 +132,9 @@ TutorSchema.statics.create = function(obj) {
 
     tutor.lastUpdated = obj.lastUpdated;
     tutor.email = obj.email;
+    tutor.firstName = obj.firstName;
+    tutor.lastName = obj.lastName;
+    tutor.imageURL = obj.imageURL;
     tutor.phone = obj.phone;
     tutor.gender = obj.gender;
     tutor.hoursWorking = obj.hoursWorking;
