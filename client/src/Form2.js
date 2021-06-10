@@ -6,7 +6,6 @@ import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Button from '@material-ui/core/Button';
-import Alert from '@material-ui/lab/Alert';
 
 const baseURL = 'https://nututors-api.herokuapp.com';
 
