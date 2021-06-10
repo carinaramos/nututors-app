@@ -17,7 +17,7 @@ import TutorTableForm from './TutorTableForm';
 export default function Dashboard() {
     const classes = useStyles();
 
-    const [component, setComponent] = React.useState("header");
+    const [component, setComponent] = React.useState("cards");
     const [tutors, setTutors] = React.useState([]);
     React.useEffect(() => {
       fetchTutors();
@@ -61,7 +61,7 @@ export default function Dashboard() {
             <div className={classes.toolbar} />
             {component === "cards" && <Cards tutorList={tutors} />}
             {component === "table" && <TutorTableForm tutorTableList={tutors}/>}
-            {component === "form" && <Form2/>}
+            {component === "form" && <Form2 onFormSubmit={fetchTutors} onRedirect={handleNavigationClick}/>}
         </main>
       </div>
     );

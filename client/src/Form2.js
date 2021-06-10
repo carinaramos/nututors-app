@@ -61,7 +61,9 @@ export default function Form2(props) {
                 }
             })
             .then(data => {
-                console.log('Success:', data);                
+                console.log('Success:', data);
+                props.onFormSubmit();
+                props.onRedirect("cards");
             })
         }
     };
