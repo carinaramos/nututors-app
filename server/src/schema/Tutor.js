@@ -9,67 +9,67 @@ const TutorSchema = new Schema({
     // "lastUpdated": "4/1/2021 8:21 PM",
     lastUpdated: {
         type: Schema.Types.String,
-        required: true
+        required: false
     },
     // "imageURL" : "https://tutorcruncher-private.s3.amazonaws.com/nututors/photos/4003c4e5-6d4d-4f54-9584-0ecf8e55d45f.jpg?AWSAccessKeyId=AKIAJWIBPSEUSFJZFQ4Q&Signature=WKcXOD5jA9HMoZy%2FX4O4jJnDwac%3D&Expires=1622742565",
     imageURL: {
         type: Schema.Types.String,
-        required: true
+        required: false
     },
     // "firstName" : "Avi",
     firstName: {
         type: Schema.Types.String,
-        required: true
+        required: false
     },
     // "lastName" : "Chung",
     lastName: {
         type: Schema.Types.String,
-        required: true
+        required: false
     },
     // "email": "avichung2023@u.northwestern.edu",
     email: {
         type: Schema.Types.String,
-        required: true
+        required: false
     },
     // "phone": "(206) 452-9790",
     phone: {
         type: Schema.Types.String,
-        required: true
+        required: false
     },
     // "gender": "Male",
     gender: {
         type: Schema.Types.String,
-        required: true
+        required: false
     },
     // "hoursWorking": 0,
     hoursWorking: {
         type: Schema.Types.String,
-        required: true
+        required: false
     },
     // "hoursDesired": 3,
     hoursDesired: {
         type: Schema.Types.String,
-        required: true
+        required: false
     },
     // "zoom": True,
     zoom: {
         type: Schema.Types.Boolean,
-        required: true
+        required: false
     },
     // "onCampus": False,
     onCampus: {
         type: Schema.Types.Boolean,
-        required: true
+        required: false
     },
     // "offCampus": "No",
     offCampus: {
         type: Schema.Types.Boolean,
-        required: true
+        required: false
     },
     // "car": "No",
     car: {
         type: Schema.Types.Boolean,
-        required: true
+        required: false
     },
     // "vax": "Fully vaccinated, tested regularly",
     vax: {
@@ -78,47 +78,47 @@ const TutorSchema = new Schema({
     // "areas": "Math, Science, Foreign Language, Standardized Testing, AP Classes",
     areas: {
         type: [Schema.Types.String],
-        required: true
+        required: false
     },
     // "math": "Elementary Math, Pre-Algebra, Algebra, Algebra 2, Trigonometry, Geometry, Pre-Calculus, Statistics, Single-Variable Calculus, Multi-Variable Calculus",
     math: {
         type: [Schema.Types.String],
-        required: true
+        required: false
     },
     // "science": "Biology, Chemistry, Physics, Environmental Science, Earth Science",
     science: {
         type: [Schema.Types.String],
-        required: true
+        required: false
     },
     // "english": "",
     english: {
         type: [Schema.Types.String],
-        required: true
+        required: false
     },
     // "socialStudies": "",
     socialStudies: {
         type: [Schema.Types.String],
-        required: true
+        required: false
     },
     // "worldLanguage": "Spanish",
     worldLanguage: {
         type: [Schema.Types.String],
-        required: true
+        required: false
     },
     // "testPrep": "ACT Writing, SAT Reading, ACT Reading, SAT Writing & Language, ACT Math, SAT Math, ACT Science",
     testPrep: {
         type: [Schema.Types.String],
-        required: true
+        required: false
     },
     // "apClasses": "AP Calculus AB, AP Biology, AP Calculus BC, AP Chemistry, AP Environmental Science, AP English Language and Composition, AP Statistics",
     apClasses: {
         type: [Schema.Types.String],
-        required: true
+        required: false
     },
     // "other": "",
     other: {
         type: [Schema.Types.String],
-        required: true
+        required: false
     },
     // "notes": ""
     notes: {

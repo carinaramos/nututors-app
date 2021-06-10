@@ -49,12 +49,13 @@ router.route("/tutors")
         //     res.status(500).send({ "message": "Name and seasons are required." });
         //     return;
         // }
+        console.log(req.body);
         Tutor.create(req.body).save()
         .then(newTutor => {
             res.status(201).send(newTutor);
         })
         .catch(err => {
-            res.status(500).send({"request": body, "message": err});
+            res.status(500).send({"request": req.body, "message": err});
         });
     });
 
