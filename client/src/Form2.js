@@ -110,7 +110,7 @@ export default function Form2(props) {
         console.log(data);
         let valid = true;
         // ADD FORM VALIDATION HERE
-        if (data.firstName === "" || data.lastName === "" || data.major === "" || data.email === "" || data.phone === "" || data.gender === "" || data.hoursDesired === "" || data.hoursWorking === "") {
+        if (data.firstName === "" || data.lastName === "" || data.imageURL === "" || data.major === "" || data.email === "" || data.phone === "" || data.gender === "" || data.hoursDesired === "" || data.hoursWorking === "") {
             valid = false
             document.querySelector("#error").innerHTML = "Invalid input. Please try again.";
         }
