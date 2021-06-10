@@ -2,14 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Button from '@material-ui/core/Button';
-  
+import Alert from '@material-ui/lab/Alert';
+
 const baseURL = 'https://nututors-api.herokuapp.com';
 
 const useStyles = makeStyles((theme) => ({
@@ -36,7 +34,6 @@ export default function Form2(props) {
     const [english, setEnglish] = React.useState(false);
     const [socialStudies, setSocialStudies] = React.useState(false);
     const [worldLanguage, setWorldLanguage] = React.useState(false);
-
 
     const handleVaccinated = () => {
         setVaccinated(!vaccinated);
@@ -73,7 +70,6 @@ export default function Form2(props) {
         setWorldLanguage(!worldLanguage);
     };
 
-
     const classes = useStyles();
 
    
@@ -104,6 +100,7 @@ export default function Form2(props) {
             hoursDesired: document.getElementById('hoursDesired').value,
             imageURL: document.getElementById('url').value,
             major: document.getElementById('major').value,
+            notes: document.getElementById('notes').value,
             car: car,
             vax: vaccinated,
             onCampus: onCampus,
@@ -115,7 +112,10 @@ export default function Form2(props) {
         console.log(data);
         let valid = true;
         // ADD FORM VALIDATION HERE
-
+        if (data.firstName == "" || data.lastName == "" || data.major == "" || data.email == "" || data.phone == "" || data.gender == "" || data.hoursDesired == "" || data.hoursWorking == "") {
+            valid = false
+            document.querySelector("#error").innerHTML = "Invalid input. Please try again.";
+        }
         if (valid == true) {
             fetch(`${baseURL}/tutors/`, {
                 method: "POST", 
@@ -144,7 +144,9 @@ export default function Form2(props) {
   
     return (
       <form className={classes.root} noValidate autoComplete="off">
-        <div>
+            <div>
+                <h3>Personal Information</h3>
+
             <TextField
             required
             id="fname"
@@ -264,16 +266,9 @@ export default function Form2(props) {
             label="Zoom/Online Tutoring"
                 />
             </div>
-            <TextField
-            id="outlined-multiline-static"
-            label="Notes"
-            className="notes"
-            multiline
-            rows={4}
-            variant="outlined"
-            />
+            
             <div>
-                Subjects
+                <h3>Subjects</h3>
                  <div>
                  <FormControlLabel
             control={
@@ -337,6 +332,19 @@ export default function Form2(props) {
                     />
                     </div>
             </div>
+            <div>
+            <TextField
+            id="notes"
+            label="Notes"
+            className="notes"
+            multiline
+            rows={4}
+            variant="outlined"
+            />
+            </div>
+            <div id="error" value="error"></div>
+            <br></br>
+            <br></br>
             <div>
                 <Button variant="outlined" onClick={() => verifyAdd()} color="default">Submit</Button>
             </div>

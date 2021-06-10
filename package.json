@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/lab": "^4.0.0-alpha.58",
     "axios": "^0.21.1",
     "chai": "^4.2.0",
     "chai-asserttype": "^1.0.5",
