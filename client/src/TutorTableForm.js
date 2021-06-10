@@ -38,11 +38,15 @@ class TutorTableForm extends React.Component {
         console.log("handle math change")
         console.log(this.state.math)
         if (this.state.math === true) {
-            this.state.math = false
+            this.setState({
+                math: false
+            });
         }
         else {
             console.log("hi")
-            this.state.math = true
+            this.setState({
+                math: true
+            });
         }
         console.log(this.state.math)
         this.fixTutors()
@@ -50,118 +54,166 @@ class TutorTableForm extends React.Component {
 
     handleChangeScience = () => {
         if (this.state.science === true) {
-            this.state.science = false
+            this.setState({
+                science: false
+            });
         }
         else {
-            this.state.science = true
+            this.setState({
+                science: true
+            });
         }
         this.fixTutors()
     }
 
     handleChangeEnglish = () => {
         if (this.state.english === true) {
-            this.state.english = false
+            this.setState({
+                english: false
+            });
         }
         else {
-            this.state.english = true
+            this.setState({
+                english: true
+            });
         }
         this.fixTutors()
     }
 
     handleChangeSocialStudies = () => {
         if (this.state.socialStudies === true) {
-            this.state.socialStudies = false
+            this.setState({
+                socialStudies: false
+            });
         }
         else {
-            this.state.socialStudies = true
+            this.setState({
+                socialStudies: true
+            });
         }
         this.fixTutors()
     }
-
+    
     handleChangeForeignLang = () => {
         if (this.state.foreignLanguage === true) {
-            this.state.foreignLanguage = false
+            this.setState({
+                foreignLanguage: false
+            });            
         }
         else {
-            this.state.foreignLanguage = true
+            this.setState({
+                foreignLanguage: true
+            });            
         }
         this.fixTutors()
     }
-
+    
     handleChangeStandardizedTesting = () => {
         if (this.state.standardizedTesting === true) {
-            this.state.standardizedTesting = false
+            this.setState({
+                standardizedTesting: false
+            });            
         }
         else {
-            this.state.standardizedTesting = true
+            this.setState({
+                standardizedTesting: true
+            });            
         }
         this.fixTutors()
     }
-
+    
     handleChangeAPClasses = () => {
         if (this.state.apClasses === true) {
-            this.state.apClasses = false
+            this.setState({
+                apClasses: false
+            });            
         }
         else {
-            this.state.apClasses = true
+            this.setState({
+                apClasses: true
+            });            
         }
         this.fixTutors()
     }
 
     handleChangeOther = () => {
         if (this.state.other === true) {
-            this.state.other = false
+            this.setState({
+                other: false
+            });         
         }
         else {
-            this.state.other = true
+            this.setState({
+                other: true
+            });         
         }
         this.fixTutors()
     }
-
+    
     handleOnCampus = () => {
         if (this.state.onCampus === true) {
-            this.state.onCampus = false
+            this.setState({
+                onCampus: false
+            });         
         }
         else {
-            this.state.onCampus = true
+            this.setState({
+                onCampus: true
+            });         
         }
         this.fixTutors()
     }
-
+    
     handleOffCampus = () => {
         if (this.state.offCampus === true) {
-            this.state.offCampus = false
+            this.setState({
+                offCampus: false
+            });         
         }
         else {
-            this.state.offCampus = true
+            this.setState({
+                offCampus: true
+            });         
         }
         this.fixTutors()
     }
-
+    
     handleVax= () => {
         if (this.state.vaccinated === true) {
-            this.state.vaccinated = false
+            this.setState({
+                vaccinated: false
+            });         
         }
         else {
-            this.state.vaccinated = true
+            this.setState({
+                vaccinated: true
+            });         
         }
         this.fixTutors()
     }
     handleCar= () => {
         if (this.state.car === true) {
-            this.state.car = false
+            this.setState({
+                car: false
+            });         
         }
         else {
-            this.state.car = true
+            this.setState({
+                car: true
+            });         
         }
         this.fixTutors()
     }
     handleZoom= () => {
         if (this.state.zoom === true) {
-            this.state.zoom = false
+            this.setState({
+                zoom: false
+            });         
         }
         else {
-            this.state.zoom = true
+            this.setState({
+                zoom: true
+            });         
         }
         this.fixTutors()
     }

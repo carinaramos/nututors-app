@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import FormControl from '@material-ui/core/FormControl';
@@ -74,19 +73,19 @@ export default function Form2(props) {
    
     const verifyAdd = (ev) => {
         let areas = []
-        if (math != false) {
+        if (math !== false) {
             areas.push("Math")
         }
-        if (science != false) {
+        if (science !== false) {
             areas.push("Science")
         }
-        if (socialStudies != false) {
+        if (socialStudies !== false) {
             areas.push("Social Studies")
         }
-        if (english != false) {
+        if (english !== false) {
             areas.push("English")
         }
-        if (worldLanguage != false) {
+        if (worldLanguage !== false) {
             areas.push("World Language")
         }
         const data = {
@@ -111,11 +110,11 @@ export default function Form2(props) {
         console.log(data);
         let valid = true;
         // ADD FORM VALIDATION HERE
-        if (data.firstName == "" || data.lastName == "" || data.major == "" || data.email == "" || data.phone == "" || data.gender == "" || data.hoursDesired == "" || data.hoursWorking == "") {
+        if (data.firstName === "" || data.lastName === "" || data.major === "" || data.email === "" || data.phone === "" || data.gender === "" || data.hoursDesired === "" || data.hoursWorking === "") {
             valid = false
             document.querySelector("#error").innerHTML = "Invalid input. Please try again.";
         }
-        if (valid == true) {
+        if (valid === true) {
             fetch(`${baseURL}/tutors/`, {
                 method: "POST", 
                 headers: {
