@@ -31,6 +31,12 @@ export default function Form2(props) {
     const [offCampus, setOffCampus] = React.useState(false);
     const [online, setOnline] = React.useState(false);
     const [testPrep, setTestPrep] = React.useState(false);
+    const [math, setMath] = React.useState(false);
+    const [science, setScience] = React.useState(false);
+    const [english, setEnglish] = React.useState(false);
+    const [socialStudies, setSocialStudies] = React.useState(false);
+    const [worldLanguage, setWorldLanguage] = React.useState(false);
+
 
     const handleVaccinated = () => {
         setVaccinated(!vaccinated);
@@ -51,18 +57,43 @@ export default function Form2(props) {
     const handleTestPrep = () => {
         setTestPrep(!testPrep);
     };
+    const handleMath = () => {
+        setMath(!math);
+    };
+    const handleScience = () => {
+        setScience(!science);
+    };
+    const handleEnglish = () => {
+        setEnglish(!english);
+    };
+    const handleSocialStudies = () => {
+        setSocialStudies(!socialStudies);
+    };
+    const handleWorldLanguage = () => {
+        setWorldLanguage(!worldLanguage);
+    };
+
 
     const classes = useStyles();
 
-    const printRes = () => {
-        console.log("vaccinated" + vaccinated);
-        console.log("car" + car);
-        console.log("on campus" + onCampus);
-        console.log("offCampus" + offCampus);
-        console.log("online" + online);
-        console.log("test prep" + testPrep);
-    }
+   
     const verifyAdd = (ev) => {
+        let areas = []
+        if (math != false) {
+            areas.push("Math")
+        }
+        if (science != false) {
+            areas.push("Science")
+        }
+        if (socialStudies != false) {
+            areas.push("Social Studies")
+        }
+        if (english != false) {
+            areas.push("English")
+        }
+        if (worldLanguage != false) {
+            areas.push("World Language")
+        }
         const data = {
             firstName: document.getElementById('fname').value,
             lastName: document.getElementById('lname').value,
@@ -78,8 +109,8 @@ export default function Form2(props) {
             onCampus: onCampus,
             offCampus: offCampus,
             zoom: online,
-            testPrep: testPrep
-
+            testPrep: testPrep,
+            areas: areas.join(", ")
         }
         console.log(data);
         let valid = true;
@@ -232,16 +263,6 @@ export default function Form2(props) {
             }
             label="Zoom/Online Tutoring"
                 />
-            <FormControlLabel
-            control={
-            <Checkbox
-                name="testPrep"
-                color="primary"
-                onClick={handleTestPrep}
-            />
-            }
-            label="Test Prep"
-            />
             </div>
             <TextField
             id="outlined-multiline-static"
@@ -251,6 +272,71 @@ export default function Form2(props) {
             rows={4}
             variant="outlined"
             />
+            <div>
+                Subjects
+                 <div>
+                 <FormControlLabel
+            control={
+            <Checkbox
+                name="math"
+                color="primary"
+                onClick={handleMath}
+            />
+            }
+            label="Math"
+                    />
+            <FormControlLabel
+            control={
+            <Checkbox
+                name="science"
+                color="primary"
+                onClick={handleScience}
+            />
+            }
+            label="Science"
+                    />
+            <FormControlLabel
+            control={
+            <Checkbox
+                name="english"
+                color="primary"
+                onClick={handleEnglish}
+            />
+            }
+            label="English"
+                    />
+            <FormControlLabel
+            control={
+            <Checkbox
+                name="socialStudies"
+                color="primary"
+                onClick={handleSocialStudies}
+            />
+            }
+            label="Social Studies"
+                    />
+                <FormControlLabel
+            control={
+            <Checkbox
+                name="worldLanguage"
+                color="primary"
+                onClick={handleWorldLanguage}
+            />
+            }
+            label="World Language"
+                    />
+                <FormControlLabel
+            control={
+            <Checkbox
+                name="testPrep"
+                color="primary"
+                onClick={handleTestPrep}
+            />
+            }
+            label="Test Prep"
+                    />
+                    </div>
+            </div>
             <div>
                 <Button variant="outlined" onClick={() => verifyAdd()} color="default">Submit</Button>
             </div>
