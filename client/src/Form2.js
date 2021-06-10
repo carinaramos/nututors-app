@@ -24,8 +24,44 @@ const useStyles = makeStyles((theme) => ({
    }
 }));
 export default function Form2(props) {
+
+    const [vaccinated, setVaccinated] = React.useState(false);
+    const [car, setCar] = React.useState(false);
+    const [onCampus, setOnCampus] = React.useState(false);
+    const [offCampus, setOffCampus] = React.useState(false);
+    const [online, setOnline] = React.useState(false);
+    const [testPrep, setTestPrep] = React.useState(false);
+
+    const handleVaccinated = () => {
+        setVaccinated(!vaccinated);
+    };
+
+    const handleCar = () => {
+        setCar(!car);
+    };
+    const handleOnCampus = () => {
+        setOnCampus(!onCampus);
+    };
+    const handleOffCampus = () => {
+        setOffCampus(!offCampus);
+    };
+    const handleOnline = () => {
+        setOnline(!online);
+    };
+    const handleTestPrep = () => {
+        setTestPrep(!testPrep);
+    };
+
     const classes = useStyles();
-    
+
+    const printRes = () => {
+        console.log("vaccinated" + vaccinated);
+        console.log("car" + car);
+        console.log("on campus" + onCampus);
+        console.log("offCampus" + offCampus);
+        console.log("online" + online);
+        console.log("test prep" + testPrep);
+    }
     const verifyAdd = (ev) => {
         const data = {
             firstName: document.getElementById('fname').value,
@@ -37,6 +73,13 @@ export default function Form2(props) {
             hoursDesired: document.getElementById('hoursDesired').value,
             imageURL: document.getElementById('url').value,
             major: document.getElementById('major').value,
+            car: car,
+            vax: vaccinated,
+            onCampus: onCampus,
+            offCampus: offCampus,
+            zoom: online,
+            testPrep: testPrep
+
         }
         console.log(data);
         let valid = true;
@@ -116,19 +159,6 @@ export default function Form2(props) {
             variant="outlined"
             />
         <FormControl variant="outlined" className={classes.formControl}>
-        <InputLabel id="demo-simple-select-outlined-label">Graduation Year</InputLabel>
-        <Select
-          labelId="demo-simple-select-outlined-label"
-          id="demo-simple-select-outlined"
-          value="20"
-          label="Graduation Year"
-        >
-          <MenuItem value={2021}>2021</MenuItem>
-          <MenuItem value={2022}>2022</MenuItem>
-          <MenuItem value={2023}>2023</MenuItem>
-          <MenuItem value={2024}>2024</MenuItem>
-          <MenuItem value={"other"}>Other</MenuItem>
-        </Select>
       </FormControl>    
             </div>
         <div>
@@ -155,8 +185,9 @@ export default function Form2(props) {
             <FormControlLabel
             control={
             <Checkbox
-                name="checkedB"
+                name="vaccinated"
                 color="primary"
+                onClick={handleVaccinated}
             />
             }
             label="Vaccinated"
@@ -164,8 +195,9 @@ export default function Form2(props) {
             <FormControlLabel
             control={
             <Checkbox
-                name="checkedB"
+                name="car"
                 color="primary"
+                onClick={handleCar}
             />
             }
             label="Car"
@@ -173,8 +205,9 @@ export default function Form2(props) {
             <FormControlLabel
             control={
             <Checkbox
-                name="checkedB"
+                name="onCampus"
                 color="primary"
+                onClick={handleOnCampus}
             />
             }
             label="On Campus Tutoring"
@@ -182,8 +215,9 @@ export default function Form2(props) {
                 <FormControlLabel
             control={
             <Checkbox
-                name="checkedB"
+                name="offCampus"
                 color="primary"
+                onClick={handleOffCampus}
             />
             }
             label="Off Campus Tutoring"
@@ -191,8 +225,9 @@ export default function Form2(props) {
             <FormControlLabel
             control={
             <Checkbox
-                name="checkedB"
+                name="online"
                 color="primary"
+                onClick={handleOnline}
             />
             }
             label="Zoom/Online Tutoring"
@@ -200,8 +235,9 @@ export default function Form2(props) {
             <FormControlLabel
             control={
             <Checkbox
-                name="checkedB"
+                name="testPrep"
                 color="primary"
+                onClick={handleTestPrep}
             />
             }
             label="Test Prep"
@@ -221,5 +257,3 @@ export default function Form2(props) {
       </form>
     );
   }
-
-
